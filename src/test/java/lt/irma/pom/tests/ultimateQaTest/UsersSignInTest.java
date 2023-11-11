@@ -12,7 +12,7 @@ public class UsersSignInTest extends TestBase {
     public void setUp() {
         UsersSignInPage.openChrome("https://courses.ultimateqa.com/users/sign_in");
     }
-    
+
     @Test
     public void testUserNameAndEmail() {
         String email = "irma.krajauskiene@gmail.com";
@@ -21,5 +21,20 @@ public class UsersSignInTest extends TestBase {
         UsersSignInPage.writeEmail(email);
         UsersSignInPage.writePassword(password);
         UsersSignInPage.clickOnButtonSignIn();
+    }
+
+    @Test
+    public void testNegativeUserNameAndEmail() {
+        String email = "irma.krajauskiene@gmail.com";
+        String password = "abcd";
+        String expectedResult = "Invalid email or password.";
+        String actualResult;
+
+        UsersSignInPage.writeEmail(email);
+        UsersSignInPage.writePassword(password);
+        UsersSignInPage.clickOnButtonSignIn();
+        actualResult = UsersSignInPage.readError();
+
+        Assert.assertEquals(actualResult, expectedResult);
     }
 }

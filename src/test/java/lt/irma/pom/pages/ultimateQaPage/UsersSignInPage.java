@@ -2,6 +2,7 @@ package lt.irma.pom.pages.ultimateQaPage;
 
 import lt.irma.pom.pages.Common;
 import lt.irma.pom.pages.Locator;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,5 +27,9 @@ public class UsersSignInPage {
 
     public static void clickOnButtonSignIn() {
         Common.clickOnElement(Locator.UltimateQa.UsersSignIn.buttonSignIn);
+    }
+
+    public static String readError() {
+        return Common.getTextFromElement(By.xpath("//li[@class='form-error__list-item']"));
     }
 }
