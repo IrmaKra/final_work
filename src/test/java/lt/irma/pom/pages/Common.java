@@ -1,6 +1,6 @@
 package lt.irma.pom.pages;
 
-import lt.irma.pom.tests.Driver;
+import lt.irma.pom.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;

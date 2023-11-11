@@ -1,4 +1,4 @@
-package lt.irma.pom.tests;
+package lt.irma.pom.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
