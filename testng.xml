@@ -3,7 +3,7 @@
 <suite name="Test Selenium" parallel="methods" thread-count="2">
     <test name="UltimateQa">
         <classes>
-            <class name="lt.irma.pom.tests.ultimateQaTest.UltimateQaTest"/>
+            <class name="lt.irma.pom.tests.ultimateQaTest.UltimateQaHomeTest"/>
             <class name="lt.irma.pom.tests.ultimateQaTest.UsersSignInTest"/>
         </classes>
     </test>
