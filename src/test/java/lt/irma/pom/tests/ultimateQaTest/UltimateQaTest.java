@@ -1,6 +1,7 @@
 package lt.irma.pom.tests.ultimateQaTest;
 
 import lt.irma.pom.pages.ultimateQaPage.UltimateQaPage;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class UltimateQaTest {
@@ -27,4 +28,10 @@ public class UltimateQaTest {
             e.printStackTrace();
         }
     }
+
+    @AfterMethod
+    public void tearDown() {
+        UltimateQaPage.closeDriver();
+    }
 }
+
