@@ -15,6 +15,13 @@ public class Locator {
             public static By inputMessage = By.xpath("//textarea[@name='et_pb_contact_message_0']");
             public static By buttonSubmit = By.xpath("//button[@type='submit']");
         }
+
+        public static class SimpleControls {
+            public static By inputIsBoxSelected = By.xpath("//a[@class='et_pb_button et_pb_promo_button']");
+            public static By divTxtButton = By.xpath("//h1[@class='entry-title']");
+
+        }
+
     }
 }
 
