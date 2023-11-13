@@ -1,15 +1,15 @@
 package lt.irma.pom.tests.ultimateQaTest;
 
-import lt.irma.pom.pages.ultimateQaPage.UltimateQaPage;
+import lt.irma.pom.pages.ultimateQaPage.UltimateQaHomePagePage;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class UltimateQaTest {
+public class UltimateQaHomePageTest {
 
     @Test
     public void testWebDriverWithChrome() {
 
-        UltimateQaPage.openChrome("https://ultimateqa.com/");
+        UltimateQaHomePagePage.openChrome("https://ultimateqa.com/");
 
         try {
             Thread.sleep(4000);
@@ -20,7 +20,7 @@ public class UltimateQaTest {
 
     @Test
     public void testWebDriverDemoWithFirefox() {
-        UltimateQaPage.openFirefox("https://ultimateqa.com/");
+        UltimateQaHomePagePage.openFirefox("https://ultimateqa.com/");
 
         try {
             Thread.sleep(4000);
@@ -31,7 +31,7 @@ public class UltimateQaTest {
 
     @AfterMethod
     public void tearDown() {
-        UltimateQaPage.closeDriver();
+        UltimateQaHomePagePage.closeDriver();
     }
 }
 

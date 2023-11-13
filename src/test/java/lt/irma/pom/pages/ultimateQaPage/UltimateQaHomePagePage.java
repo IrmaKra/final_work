@@ -2,7 +2,7 @@ package lt.irma.pom.pages.ultimateQaPage;
 
 import lt.irma.pom.pages.Common;
 
-public class UltimateQaPage {
+public class UltimateQaHomePagePage {
     public static void openChrome(String url) {
         Common.setUpChrome();
         Common.openUrl(url);
