@@ -5,7 +5,7 @@
         <classes>
             <class name="lt.irma.pom.tests.ultimateQaTest.UltimateQaHomePageTest"/>
             <class name="lt.irma.pom.tests.ultimateQaTest.UsersSignInTest"/>
-            <class name="lt.irma.pom.tests.ultimateQaTest.FillingOutFormsTest"/>
+            <class name="lt.irma.pom.tests.ultimateQaTest.FillingOutFormSendUsAMessageTest"/>
             <class name="lt.irma.pom.tests.ultimateQaTest.SimpleControlsTest"/>
         </classes>
     </test>

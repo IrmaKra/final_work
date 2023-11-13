@@ -10,10 +10,12 @@ public class Locator {
             public static By buttonSignIn = By.xpath("//button[@type='submit']");
         }
 
-        public static class FillingOutForms {
-            public static By inputName = By.xpath("//input[@id='et_pb_contact_name_0']");
+        public static class FillingOutFormSendUsAMessage {
+            public static By inputFirstName = By.xpath("//input[@id='et_pb_contact_first_0']");
+            public static By inputLastName = By.xpath("//input[@id='et_pb_contact_last_0']");
+            public static By inputEMailAddress = By.xpath("//input[@id='et_pb_contact_email_0']");
             public static By inputMessage = By.xpath("//textarea[@name='et_pb_contact_message_0']");
-            public static By buttonSubmit = By.xpath("//button[@type='submit']");
+            public static By buttonSendMessage = By.xpath("//button[@type='submit']");
         }
 
         public static class SimpleControls {
