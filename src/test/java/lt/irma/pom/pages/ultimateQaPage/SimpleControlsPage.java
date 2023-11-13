@@ -9,12 +9,12 @@ public class SimpleControlsPage {
         Common.openUrl(url);
     }
 
-    public static void checkOnCheckBox() {
+    public static void checkOnButtonClickMe() {
         Common.clickOnElement(Locator.UltimateQa.SimpleControls.inputIsBoxSelected);
     }
 
     public static String readSingleCheckBoxMessage() {
-        return Common.getTextFromElement(Locator. UltimateQa.SimpleControls.divTxtButton);
+        return Common.getTextFromElement(Locator.UltimateQa.SimpleControls.divTxtButton);
     }
 
-    }
+}

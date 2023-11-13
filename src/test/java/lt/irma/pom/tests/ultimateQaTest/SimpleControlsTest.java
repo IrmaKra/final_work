@@ -14,12 +14,13 @@ public class SimpleControlsTest extends TestBase {
                 "https://ultimateqa.com/simple-html-elements-for-automation/"
         );
     }
+
     @Test
-    public void testClickOnCheckBox() {
+    public void testClickOnButtonClickMe() {
         String expectedMessage = "Button success";
         String actualMessage;
 
-        SimpleControlsPage.checkOnCheckBox();
+        SimpleControlsPage.checkOnButtonClickMe();
         actualMessage = SimpleControlsPage.readSingleCheckBoxMessage();
 
         Assert.assertEquals(actualMessage, expectedMessage);
