@@ -29,7 +29,4 @@ public class UsersSignInPage {
         Common.clickOnElement(Locator.UltimateQa.UsersSignIn.buttonSignIn);
     }
 
-    public static String readError() {
-        return Common.getTextFromElement(By.xpath("//li[@class='form-error__list-item']"));
-    }
 }

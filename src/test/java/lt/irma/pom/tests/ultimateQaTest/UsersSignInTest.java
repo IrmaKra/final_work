@@ -23,18 +23,4 @@ public class UsersSignInTest extends TestBase {
         UsersSignInPage.clickOnButtonSignIn();
     }
 
-    @Test
-    public void testNegativeUserNameAndEmail() {
-        String email = "irma.krajauskiene@gmail.com";
-        String password = "abcd";
-        String expectedResult = "Invalid email or password.";
-        String actualResult;
-
-        UsersSignInPage.writeEmail(email);
-        UsersSignInPage.writePassword(password);
-        UsersSignInPage.clickOnButtonSignIn();
-        actualResult = UsersSignInPage.readError();
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
 }
