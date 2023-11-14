@@ -33,5 +33,6 @@ public class UltimateQaHomePageTest {
     public void tearDown() {
         UltimateQaHomePagePage.closeDriver();
     }
+
 }
 

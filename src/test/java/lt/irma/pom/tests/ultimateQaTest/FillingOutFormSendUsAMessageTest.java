@@ -25,4 +25,5 @@ public class FillingOutFormSendUsAMessageTest extends TestBase {
         FillingOutFormSendUsAMessagePage.writeMessage(message);
         FillingOutFormSendUsAMessagePage.clickOnButtonSendMessage();
     }
+
 }
