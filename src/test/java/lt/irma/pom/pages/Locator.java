@@ -20,7 +20,6 @@ public class Locator {
 
         public static class UltimateQaSearch {
             public static By inputSearchText = By.xpath("//input[@class='et_pb_s']");
-
             public static By buttonSearch = By.xpath("//input[@class='et_pb_searchsubmit']");
             public static By searchResults = By.xpath("//a[@href='https://ultimateqa.com/blog/']");
         }
@@ -28,9 +27,9 @@ public class Locator {
         public static class ForgotPassword {
             public static By inputIsButtonForgotPasswordSelected = By.xpath("//a[@href='/users/password/new']");
             public static By textMessage = By.xpath("//h2[@class='password-reset__heading']");
-
         }
 
     }
+
 }
 

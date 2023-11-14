@@ -7,6 +7,7 @@
             <class name="lt.irma.pom.tests.ultimateQaTest.UsersSignInTest"/>
             <class name="lt.irma.pom.tests.ultimateQaTest.FillingOutFormSendUsAMessageTest"/>
             <class name="lt.irma.pom.tests.ultimateQaTest.ForgotPasswordTest"/>
+            <class name="lt.irma.pom.tests.ultimateQaTest.UltimateQaSearchTest"/>
         </classes>
     </test>
 </suite>
