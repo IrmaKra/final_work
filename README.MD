@@ -5,9 +5,8 @@ Pasirinkta testuoti svetainė: https://ultimateqa.com/
 1. Try logging in using valid email and valid password:
    * enter valid email address;
    * enter valid password;
-   * click button *"Sign In"*;
-   * check to see if an user icon appears.
-
+   * click button *"Sign In"*.
+   
 2. Test search function:
     * enter text in input field *"Search"*;
     * click search icon;
