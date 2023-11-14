@@ -17,27 +17,17 @@ public class Locator {
             public static By inputMessage = By.xpath("//textarea[@name='et_pb_contact_message_0']");
             public static By buttonSendMessage = By.xpath("//button[@type='submit']");
         }
+
         public static class UltimateQaSearch {
             public static By inputSearchText = By.xpath("//input[@class='et_pb_s']");
 
             public static By buttonSearch = By.xpath("//input[@class='et_pb_searchsubmit']");
             public static By searchResults = By.xpath("//a[@href='https://ultimateqa.com/blog/']");
-
         }
 
-        public static class DropdownLearning {
-            public static By selectOptionFromSubmeniu = By.xpath("//input[@id='et_pb_contact_first_0']");
-
-
-            public static By setInputById(String attributeId) {
-//                return By.xpath("//input[@id='%s']".formatted(attributeId));
-                return By.xpath("//input[@id='" + attributeId + "']");
-            }
-        }
-
-        public static class SimpleControls {
-            public static By inputIsBoxSelected = By.xpath("//a[@class='et_pb_button et_pb_promo_button']");
-            public static By divTxtButton = By.xpath("//h1[@class='entry-title']");
+        public static class ForgotPassword {
+            public static By inputIsButtonForgotPasswordSelected = By.xpath("//a[@href='/users/password/new']");
+            public static By textMessage = By.xpath("//h2[@class='password-reset__heading']");
 
         }
 
