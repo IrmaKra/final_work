@@ -34,9 +34,9 @@ public class Common {
         return Driver.getDriver().findElement(locator);
     }
 
-//    private static List<WebElement> getElements(By locator) {
-//        return Driver.getDriver().findElements(locator);
-//    }
+    private static List<WebElement> getElements(By locator) {
+        return Driver.getDriver().findElements(locator);
+    }
 
     public static void sendKeysToElement(By locator, String text) {
         getElement(locator).sendKeys(text);
@@ -50,74 +50,74 @@ public class Common {
         getElement(locator).click();
     }
 
-//    public static void clickOnElementWhenAvailableCustomised(By locator, int seconds) {
-//
-//        for (int i = 0; i <= (seconds * 2); i++) {
-//            try {
-//                Thread.sleep(500);
-//                clickOnElement(locator);
-//                break;
-//            } catch (NoSuchElementException | InterruptedException e) {
-//
-//            }
-//        }
-//    }
-//
-//    public static boolean waitElementWhenAvailableCustomised(By locator, int seconds) {
-//
-//        for (int i = 0; i <= (seconds * 2); i++) {
-//            try {
-//                Thread.sleep(500);
-//                if (getElement(locator).isDisplayed()) {
-//                    return true;
-//                }
-//            } catch (NoSuchElementException | InterruptedException e) {
-//
-//            }
-//        }
-//
-//        return false;
-//    }
+    public static void clickOnElementWhenAvailableCustomised(By locator, int seconds) {
 
-//    public static void waitElementWhenVisible(By locator, int seconds) throws TimeoutException {
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
-//
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-//    }
-//
-//    public static boolean isElementSelected(By locator) {
-//        return getElement(locator).isSelected();
-//    }
-//
-//    public static boolean isElementEnabled(By locator) {
-//        return getElement(locator).isEnabled();
-//    }
-//
-//    public static List<Boolean> getStatusesOfElements(By locator) {
-//        List<WebElement> elements = getElements(locator);
-//        List<Boolean> statuses = new ArrayList<>();
-//
-//        for (WebElement element : elements) {
-//            statuses.add(element.isSelected());
-//        }
-//
-//        return statuses;
-//    }
-//
-//    public static String getElementAttributeValue(By locator, String atributeName) {
-//        return getElement(locator).getAttribute(atributeName);
-//    }
+        for (int i = 0; i <= (seconds * 2); i++) {
+            try {
+                Thread.sleep(500);
+                clickOnElement(locator);
+                break;
+            } catch (NoSuchElementException | InterruptedException e) {
 
-//    private static Select getSelect(By locator) {
-//        return new Select(getElement(locator));
-//    }
+            }
+        }
+    }
 
-//    public static void selectOptionByValue(By locator, String selectValue) {
-//        getSelect(locator).selectByValue(selectValue);
-//    }
-//
-//    public static void selectOptionByIndex(By locator, int index) {
-//        getSelect(locator).selectByIndex(index);
-//    }
-//
+    public static boolean waitElementWhenAvailableCustomised(By locator, int seconds) {
+
+        for (int i = 0; i <= (seconds * 2); i++) {
+            try {
+                Thread.sleep(500);
+                if (getElement(locator).isDisplayed()) {
+                    return true;
+                }
+            } catch (NoSuchElementException | InterruptedException e) {
+
+            }
+        }
+
+        return false;
+    }
+
+    public static void waitElementWhenVisible(By locator, int seconds) throws TimeoutException {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static boolean isElementSelected(By locator) {
+        return getElement(locator).isSelected();
+    }
+
+    public static boolean isElementEnabled(By locator) {
+        return getElement(locator).isEnabled();
+    }
+
+    public static List<Boolean> getStatusesOfElements(By locator) {
+        List<WebElement> elements = getElements(locator);
+        List<Boolean> statuses = new ArrayList<>();
+
+        for (WebElement element : elements) {
+            statuses.add(element.isSelected());
+        }
+
+        return statuses;
+    }
+
+    public static String getElementAttributeValue(By locator, String atributeName) {
+        return getElement(locator).getAttribute(atributeName);
+    }
+
+    private static Select getSelect(By locator) {
+        return new Select(getElement(locator));
+    }
+
+    public static void selectOptionByValue(By locator, String selectValue) {
+        getSelect(locator).selectByValue(selectValue);
+    }
+
+    public static void selectOptionByIndex(By locator, int index) {
+        getSelect(locator).selectByIndex(index);
+    }
+
 }
